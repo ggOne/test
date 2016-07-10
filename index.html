@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>1</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+
+	<script src="libs/modernizr/modernizr.js"></script>
+	<script type="text/javascript">
+
+$( init );
+
+function init() {
+
+  // Удаляем содержимое #myDiv1 и #myDiv2
+  $('.emptyMe').empty();
+}
+
+</script>
+
+</head>
+
+<body>
+<div class="content">
+<div class="backstage">
+<div class="Wrp">
+	<ul>
+
+	<!-- блок с текстом  -->
+	<li><div tabindex="1" id="Div1" class="block0">
+	<button onclick=sorrt0()></button>
+		<div class="text">
+			<strong><p class="p1">Краткая история сборной</p></strong>
+			<p>Сборная Англии по футболу (англ. England national football team) представляет Англию в международных матчах и турнирах по футболу. Управляющая организация — Футбольная ассоциация Англии. Футбольная ассоциация Англии является старейшей в мире; основанная в 1863 году, она стала членом ФИФА в 1905 году и членом УЕФА в 1954 году.</p>
+         <p>Сборная Англии является старейшей, наряду с Шотландией, национальной футбольной сборной в мире. Первый международный матч англичане провели как раз с шотландцами в 1872 году. С 1883 года англичане начали участвовать в Домашнем чемпионате Британии — первом международном футбольном турнире для сборных; всего же за столетнюю историю турнира они добивались победы на нём рекордные 54 раза.</p>
+		</div>
+	</div></li>
+
+	<!-- сортировка списка по алф. а-я от я-а -->
+	<li><div tabindex="2" id="Div2" class="block1">
+	<button onclick=sorrt1()></button>
+	<div id='ul11'>
+		<p><b>Список игроков:</b></p>
+			<ul>
+				<li>Джо Харт</li>
+				<li>Натаниэл Клайн</li>
+				<li>Крис Смоллинг</li>
+				<li>Гари Кэйхилл</li>
+				<li>Дэниэл Роуз</li>
+				<li>Адам Лаллана</li>
+				<li>Деле Алли</li>
+				<li>Эрик Дайер</li>
+				<li>Маркус Рэшфорд</li>
+				<li>Уэйн Руни</li>
+				<li>Харри Кейн</li><br>
+				<strong><a onclick=sorrtab()>Сортировать_АЯ</a> | <a onclick=sorrtz()>Сортировать_ЯА</a></strong>
+			</ul> 
+		</div>
+	</div></li>
+
+	<!-- блок селектора выбора -->
+	<li><div tabindex="3" class="block2" id="Div3">
+	<button onclick=sorrt2()></button>
+		<select class="selec">
+  			<option>Выберите запасного игрока:</option>
+  			<option>Кайл Уокер</option>
+  			<option>Джеймс Милнер</option>
+  			<option>Росс Баркли</option>
+  			<option>Джейми Варди</option>
+  			<option>Дэниэл Старридж</option>
+  			<option>Томас Хитон</option>
+		</select>
+	</div></li>
+
+	<!-- список с радообатон -->
+	<li><div tabindex="4" id="Div4" class="block3">
+	<button onclick=sorrt3()></button>
+		 <form class="opros">
+  			<p><b>Какая команда имеет больше шансов на Евро?</b></p>
+  			<p><input type="radio" name="answer" value="a1">Франция<Br>
+  			<input type="radio" name="answer" value="a2">Англия<Br>
+  			<input type="radio" name="answer" value="a3">Португалия<Br>
+  			<input type="radio" name="answer" value="a4">Испания<Br>
+  			<input type="radio" name="answer" value="a5">Италия<Br>
+  			<input type="radio" name="answer" value="a6">Бельгия<Br>
+  			<input type="radio" name="answer" value="a7">Уэльс<Br>
+  			<input type="radio" name="answer" value="a8">Германия<Br>
+  			<input type="radio" name="answer" value="a9">Польша<Br>
+  			<input type="radio" name="answer" value="a10">Ирландия<Br>
+  			<input type="radio" name="answer" value="a11">Хорватия<Br>
+  			<input type="radio" name="answer" value="a12">Австрия</p>
+  			<p><input class="butt" type="submit"></p>
+ 		 </form>
+	</div></li>
+
+	<!-- мини галерея с возможностью удаления картинок -->
+	<li><div tabindex="5" id="Div5" class="block4">
+			<button onclick=sorrt4()></button>
+		<div class="image">
+		   <img class="image0" src="img/g1.jpg" alt="" width="150" tabindex="0"/>
+	
+			<img class="image1" src="img/g2.jpg" alt="" width="150" tabindex="0"/>
+			<img class="image2" src="img/g3.jpg" alt="" width="150" tabindex="0"/>
+			<img class="image3" src="img/g4.jpg" alt="" width="150" tabindex="0"/>
+		</div>
+		<a onclick=dell0()>Удалить</a>
+		<a onclick=dell1()>Удалить</a>
+		<a onclick=dell2()>Удалить</a>
+		<a onclick=dell3()>Удалить</a>
+    </div></li>
+
+    <!-- форма с заранее введенными данными -->
+    <li><div tabindex="5" id="Div5" class="block5">
+    <button onclick=sorrt5()></button>
+    <div class="forma">
+	<h1>Регистрация</h1>
+	<form name="one">
+    <table>
+        <tr><td><b>Ваше Имя:<b></td>
+            <td><input name="Id" SIZE=20
+             onBlur="this.value=this.value.toUpperCase()"></td></tr>
+        <tr><td><b>Пароль:<b></td>
+            <td><input type="password" name="Pwd" SIZE=20
+             onFocus="this.select();"></td></tr>
+        <tr><td><b>Проверка пароля:<b></td>
+            <td><input type="password" name="Pwd1" SIZE=20
+             onFocus="this.select();"></td></tr>
+    </table>
+    <input type="button" class="buttono" value="Готово" onClick="Complete1();">
+    <input type="reset" class="button" value="Сброс">
+	</form>
+ 	</div></li>
+ 	<li><div tabindex="" id="Div" class="bloky">
+		  <a href="#" class="para" onclick="addQuestion()">Добавить блок</a>
+		   <div id="parentId"></div>
+		  </div>
+ 	</li>
+	</ul>
+	</div>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	
+	<script src="js/common.js"></script>
+	<script src="js/skript.js"></script>
+</body>
+</html>
